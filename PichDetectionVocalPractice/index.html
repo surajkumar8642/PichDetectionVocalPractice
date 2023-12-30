@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocal Parasitics</title>
+</head>
+<body>
+    <input type="file" id="fileInput" accept=".mp3">
+    <button id="startAudioContextButton">Start Audio Context</button>
+    <div id="pitchGraphContainer">
+        <!-- Pitch graph display area -->
+        <canvas id="pitchGraphCanvas" width="600" height="300"></canvas>
+    </div>
+
+    <div id="liveAudioContainer">
+        <!-- Live audio display area -->
+        <canvas id="liveAudioCanvas" width="600" height="100"></canvas>
+    </div>
+
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- Include p5.js and p5.sound.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+    
+    <script src="app.js"></script>
+</body>
+</html>
